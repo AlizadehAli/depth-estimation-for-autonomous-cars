@@ -14,7 +14,6 @@ class KittiLoader(Dataset):
             right_dir = os.path.join(root_dir, 'image_03/data/')
             self.right_paths = sorted([os.path.join(right_dir, fname) for fname\
                                 in os.listdir(right_dir)])
-            print(100*'4')
             print('left directory: ', left_dir)
             print('left length: ', len(self.left_paths))
             print('right directory: ', right_dir)

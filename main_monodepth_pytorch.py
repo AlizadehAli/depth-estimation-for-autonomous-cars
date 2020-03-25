@@ -19,20 +19,20 @@ mpl.rcParams['figure.figsize'] = (15, 10)
 def return_arguments():
     parser = argparse.ArgumentParser(description='PyTorch Monodepth')
 
-    parser.add_argument('data_dir',
+    parser.add_argument('--data_dir',
                         help='path to the dataset folder. \
                         It should contain subfolders with following structure:\
                         "image_02/data" for left images and \
                         "image_03/data" for right images'
                         )
-    parser.add_argument('val_data_dir',
+    parser.add_argument('--val_data_dir',
                         help='path to the validation dataset folder. \
                             It should contain subfolders with following structure:\
                             "image_02/data" for left images and \
                             "image_03/data" for right images'
                         )
-    parser.add_argument('model_path', help='path to the trained model')
-    parser.add_argument('output_directory',
+    parser.add_argument('--model_path', help='path to the trained model')
+    parser.add_argument('--output_directory',
                         help='where save dispairities\
                         for tested images'
                         )
